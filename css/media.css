@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px){
+
+	.header-toggle{
+		display: block;
+	}
+	.header-menu{
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+	}
+	.header-menu-item-a{
+		margin: 5px auto;
+	}
+
+
+	.head-welcome{
+		font-size: 1.25em;
+	}
+	.head-info{
+		font-size: 1.75em;
+	}
+}
