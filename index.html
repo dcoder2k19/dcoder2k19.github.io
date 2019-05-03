@@ -14,17 +14,17 @@
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<header>
+	<header id="home">
 		<div class="container">
 			<div class="header">
 				<div class="header-logo">DCoder</div>
 				<a class="header-toggle" href="#"><i class="fas fa-bars"></i></a>
 				<ul class="header-menu">
-					<li class="header-menu-item"><a class="header-menu-item-a" href="#">home</a></li>
-					<li class="header-menu-item"><a class="header-menu-item-a" href="#">about me</a></li>
-					<li class="header-menu-item"><a class="header-menu-item-a" href="#">my skills</a></li>
-					<li class="header-menu-item"><a class="header-menu-item-a" href="#">portfolio</a></li>
-					<li class="header-menu-item"><a class="header-menu-item-a" href="#">contact</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-a scroll" href="#home">home</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-a scroll" href="#about">about me</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-a scroll" href="#skills">my skills</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-a scroll" href="#portfolio">portfolio</a></li>
+					<li class="header-menu-item"><a class="header-menu-item-a scroll" href="#contact">contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -34,11 +34,11 @@
 			<div class="head-box">
 				<div class="head-welcome">welcome to my portfolio</div>
 				<div class="head-info">My name is Ismail and I'm Web Developer</div>
-				<button class="head-button">more information</button>
+				<a href="#about" class="head-button scroll">more information</a>
 			</div>
 		</div>
 	</div>
-	<section class="about-me">
+	<section class="about-me" id="about">
 		<div class="container">
 			<div class="about-me-box">
 				<div class="about-me-ava">
@@ -52,16 +52,16 @@
 					</div>
 					<div class="about-me-follow">Follow me</div>
 					<ul class="about-me-social-icons">
-						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="#"><i class="fab fa-vk"></i></a></li>
-						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="#"><i class="fab fa-instagram"></i></a></li>
-						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="#"><i class="fab fa-github-alt"></i></a></li>
-						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="#"><i class="fab fa-telegram"></i></a></li>
+						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="https://vk.com/dcoder" target="_blank"><i class="fab fa-vk"></i></a></li>
+						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="https://instagram.com/dcoder2003" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="https://github.com/dcoder2k19" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+						<li class="about-me-social-icon"><a class="about-me-social-icon-a" href="http://t.me/77714023318" target="_blank"><i class="fab fa-telegram"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="my-skills">
+	<section class="my-skills" id="skills">
 		<div class="container">
 			<div class="my-skills-box">
 				<div class="section-title-2">My skills</div>
@@ -102,7 +102,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="portfolio-box">
 				<div class="section-title-2">portfolio</div>
@@ -173,17 +173,18 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="contact-box">
 				<div class="section-title-2">contact</div>
-				<div class="section-description-2">write to me</div>
+				<div class="section-description-2">Write to me</div>
 				<div class="section-icon"><i class="fas fa-headset"></i></div>
 				<div class="contact-form">
-					<input class="contact-form-input" type="text" name="name" required="" placeholder="Your name*">
-					<input class="contact-form-input" type="email" name="email" required="" placeholder="Your email*">
-					<textarea class="contact-form-text" required="" placeholder="Your message*"></textarea>
-					<button class="contact-form-button">send</button>
+					<input class="contact-form-input" type="text" name="name" required="" placeholder="Your name*" id="name">
+					<input class="contact-form-input" type="email" name="email" required="" placeholder="Your email*" id="email">
+					<textarea class="contact-form-text" required="" placeholder="Your message*" id="message"></textarea>
+					<button class="contact-form-button" id="submit">send</button>
+					<div class="contact-form-message" id="msg"></div>
 				</div>
 			</div>
 		</div>
@@ -191,10 +192,13 @@
 	<footer>
 		<div class="container">
 			<div class="footer">
-				<a class="footer-copyright" href="#">&copy; DCoder</a>
+				<a class="footer-copyright" href="">&copy; DCoder</a>
 				<a class="footer-email" href="mailto:dcoder2k19@gmail.com">dcoder2k19@gmail.com</a>
 			</div>
 		</div>
 	</footer>
+	<div class="container">
+		<a href="#home" class="arrow-top scroll"><i class="fas fa-chevron-up"></i></a>
+	</div>
 </body>
 </html>

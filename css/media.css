@@ -4,6 +4,7 @@
 		display: block;
 	}
 	.header-menu{
+		position: fixed;
 		display: none;
 		flex-direction: column;
 		width: 100%;
