@@ -286,7 +286,7 @@ header{
 	max-height: 170px;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.09);
 	margin: 0 0 40px 0;
 	transition: 0.35s;
 }
@@ -296,7 +296,7 @@ header{
 	max-height: 220px;
 }
 .portfolio-work:hover{
-	box-shadow: 0 0 25px rgba(0,0,0, 0.7);
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
 }
 .portfolio-work-info{
 	display: flex;
