@@ -310,10 +310,26 @@ header{
 	letter-spacing: 0.3px;
 }
 .red{
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 150px;
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.09);
+	border-radius: 5px;
 	color: red;
 }
 .green{
+	background-color: white;
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.09);
 	color: green;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	border-radius: 5px;
+	height: 100px;
 }
 
 
@@ -423,4 +439,16 @@ footer{
 	display: none;
 	transition: 0.35s;
 	box-shadow: 0 0 45px rgba(0,0,0,0.75);
+}
+.contact-form-message{
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+	display: none;
+	align-items: center;
+	justify-content: center;
 }

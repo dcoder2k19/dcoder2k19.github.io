@@ -23,6 +23,7 @@ $(document).ready(function() {
     		$('.arrow-top').css('display', 'none');
     	}
     });
+
 	$("#submit").on("click", function() {
 		var name = $("#name").val();
 		var email = $("#email").val();
@@ -37,6 +38,7 @@ $(document).ready(function() {
 					"message": message
 				},
 				success: function(data) {
+					$(".contact-form-message").css('display', 'flex');
 					$("#msg").html('<div class="green">Succes!</div>');
 					$("#name").val('');
 					$("#email").val('');
@@ -44,7 +46,12 @@ $(document).ready(function() {
 				}
 			});
 		}else{
+			$(".contact-form-message").css('display', 'flex');
 			$("#msg").html('<div class="red">Fill in all the fields</div>');
 		}
+	});
+
+	$('.contact-form-message').on('click', function() {
+		$(this).css('display', 'none');
 	});
 });
